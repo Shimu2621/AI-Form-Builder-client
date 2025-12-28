@@ -45,6 +45,9 @@ interface MenuItem {
   items?: MenuItem[];
 }
 
+/**
+ * Navbar props
+ */
 interface NavbarProps {
   menu?: MenuItem[];
   auth?: {
@@ -53,6 +56,12 @@ interface NavbarProps {
   };
 }
 
+/**
+ * Navbar Component
+ * - Responsive (desktop + mobile)
+ * - Auth-aware (login / avatar / dashboard / logout)
+ * - Animated with Framer Motion
+ */
 const Navbar = ({
   menu = [
     { title: "Home", url: "/" },
@@ -110,6 +119,9 @@ const Navbar = ({
   const { user, loading, logout } = useAuth();
   const router = useRouter();
 
+  /**
+   * Track scroll position to detect hero section visibility
+   */
   useEffect(() => {
     const handleScroll = () => {
       const heroSection = document.querySelector("#hero-section");
@@ -123,6 +135,9 @@ const Navbar = ({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  /**
+   * Navbar background style (currently same for both states)
+   */
   const navbarClass = isHeroSection
     ? "bg-transparent backdrop-blur-md"
     : "bg-transparent backdrop-blur-md";
