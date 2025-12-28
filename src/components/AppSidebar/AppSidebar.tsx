@@ -27,7 +27,7 @@ import Link from "next/link";
 import { useAuth } from "@/auth/authContext";
 import { Progress } from "@/components/ui/progress";
 
-// Define navigation items for user
+// Define navigation items for users
 const userItems = [
   {
     title: "Dashboard",

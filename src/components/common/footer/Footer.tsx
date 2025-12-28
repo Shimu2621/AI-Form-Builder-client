@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Sparkles } from "lucide-react";
 
+// Footer sections data
 const footerSections = [
   {
     title: "Product",
