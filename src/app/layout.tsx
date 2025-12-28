@@ -19,6 +19,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Define meta data
 export const metadata: Metadata = {
   title: "AI Form Generator: Create Custom Forms with AI in Seconds",
   description:
