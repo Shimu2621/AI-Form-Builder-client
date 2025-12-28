@@ -1,38 +1,58 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { motion } from "framer-motion"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Line } from "react-chartjs-2"
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from "chart.js"
-import { fetchUserGrowth } from "@/lib/api"
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Line } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler,
+} from "chart.js";
+import { fetchUserGrowth } from "@/lib/api";
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler)
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+);
 
 const UserGrowthChart = () => {
-  const [data, setData] = useState<{ date: string; count: number }[]>([])
-  const [loading, setLoading] = useState(true)
+  const [data, setData] = useState<{ date: string; count: number }[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const result = await fetchUserGrowth()
-        setData(result)
+        const result = await fetchUserGrowth();
+        setData(result);
       } catch (error) {
-        console.error("Failed to fetch user growth data:", error)
+        console.error("Failed to fetch user growth data:", error);
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
-    loadData()
-  }, [])
+    };
+    loadData();
+  }, []);
 
+  // Define chart data
   const chartData = {
-    labels: data.map(item => item.date),
+    labels: data.map((item) => item.date),
     datasets: [
       {
         label: "New Users",
-        data: data.map(item => item.count),
+        data: data.map((item) => item.count),
         fill: true,
         backgroundColor: "rgba(75, 192, 192, 0.2)",
         borderColor: "rgb(75, 192, 192)",
@@ -43,7 +63,7 @@ const UserGrowthChart = () => {
         pointHoverBorderColor: "rgb(75, 192, 192)",
       },
     ],
-  }
+  };
 
   const chartOptions = {
     responsive: true,
@@ -64,15 +84,19 @@ const UserGrowthChart = () => {
     plugins: {
       legend: { position: "top" as const, labels: { color: "" } },
       title: { display: true, text: "User Growth" },
-      tooltip: { backgroundColor: "rgba(0, 0, 0, 0.8)", titleColor: "#fff", bodyColor: "#fff" },
+      tooltip: {
+        backgroundColor: "rgba(0, 0, 0, 0.8)",
+        titleColor: "#fff",
+        bodyColor: "#fff",
+      },
     },
-  }
+  };
 
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
     hover: { scale: 1.05, transition: { duration: 0.3 } },
-  }
+  };
 
   return (
     <motion.div
@@ -86,11 +110,15 @@ const UserGrowthChart = () => {
           <CardTitle>User Growth</CardTitle>
         </CardHeader>
         <CardContent className="h-64 sm:h-72 md:h-80 p-2">
-          {loading ? <p className="text-white">Loading...</p> : <Line data={chartData} options={chartOptions} />}
+          {loading ? (
+            <p className="text-white">Loading...</p>
+          ) : (
+            <Line data={chartData} options={chartOptions} />
+          )}
         </CardContent>
       </Card>
     </motion.div>
-  )
-}
+  );
+};
 
-export default UserGrowthChart
+export default UserGrowthChart;
