@@ -1,42 +1,65 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from "zod"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
+import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 
-import { Chrome, ArrowLeft, Eye, EyeOff } from "lucide-react"
-import Link from "next/link"
-import { ModeToggle } from "@/components/ModeToggle/ModeToggle"
-import { useState } from "react"
-import { useMutation } from "@tanstack/react-query"
-import { toast } from "sonner"
-import { useRouter } from "next/navigation"
-import api from "@/lib/axios"
-import { useAuth } from "@/auth/authContext"
+import { Chrome, ArrowLeft, Eye, EyeOff } from "lucide-react";
+import Link from "next/link";
+import { ModeToggle } from "@/components/ModeToggle/ModeToggle";
+import { useState } from "react";
+import { useMutation } from "@tanstack/react-query";
+import { toast } from "sonner";
+import { useRouter } from "next/navigation";
+import api from "@/lib/axios";
+import { useAuth } from "@/auth/authContext";
 
+/**
+ * Zod schema for sign-in form validation
+ */
 const signinSchema = z.object({
   email: z.string().email("Please enter a valid email"),
   password: z.string().min(1, "Password is required"),
-})
+});
 
-type SigninForm = z.infer<typeof signinSchema>
+/**
+ * Type inferred from Zod schema
+ */
+type SigninForm = z.infer<typeof signinSchema>;
 
 export default function SignInPage() {
-  const { setUserFromToken } = useAuth()
-  const [showPassword, setShowPassword] = useState(false)
-  const router = useRouter()
+  const { setUserFromToken } = useAuth();
+  const [showPassword, setShowPassword] = useState(false);
+  const router = useRouter();
+
+  /**
+   * Initialize React Hook Form with Zod validation
+   */
   const form = useForm<SigninForm>({
     resolver: zodResolver(signinSchema),
     defaultValues: {
       email: "",
       password: "",
     },
-  })
+  });
 
   // // Handle token from URL parameters (for Google OAuth redirect)
   // useEffect(() => {
@@ -57,24 +80,31 @@ export default function SignInPage() {
   // }, [router]);
 
   const signinMutation = useMutation({
-    mutationFn: (data: SigninForm) => api.post("/auth/signin", data).then((res) => res.data),
+    mutationFn: (data: SigninForm) =>
+      api.post("/auth/signin", data).then((res) => res.data),
     onSuccess: (data) => {
       if (data?.data?.token) {
-        setUserFromToken(data.data.token)
-        toast.success("Signed in successfully! Welcome back.")
-        router.push("/")
+        setUserFromToken(data.data.token);
+        toast.success("Signed in successfully! Welcome back.");
+        router.push("/");
       } else {
-        toast.error("Signin failed: No token received.")
+        toast.error("Signin failed: No token received.");
       }
     },
     onError: (error: any) => {
-      toast.error(error?.response?.data?.message || "An error occurred during signin. Please try again.")
+      toast.error(
+        error?.response?.data?.message ||
+          "An error occurred during signin. Please try again."
+      );
     },
-  })
+  });
 
+  /**
+   * Handle form submission
+   */
   const onSubmit = (data: SigninForm) => {
-    signinMutation.mutate(data)
-  }
+    signinMutation.mutate(data);
+  };
 
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -86,8 +116,11 @@ export default function SignInPage() {
         ease: "easeOut" as const,
       },
     },
-  }
+  };
 
+  /**
+   * Card hover & tap animation
+   */
   const cardVariants = {
     hover: {
       scale: 1.02,
@@ -99,21 +132,21 @@ export default function SignInPage() {
     tap: {
       scale: 0.98,
     },
-  }
+  };
 
   const handleGoogleLogin = () => {
-    window.location.href = `${process.env.NEXT_PUBLIC_API_URL}/auth/google`
-  }
+    window.location.href = `${process.env.NEXT_PUBLIC_API_URL}/auth/google`;
+  };
 
   const fillUserCredentials = () => {
-    form.setValue("email", "john.doe@example.com")
-    form.setValue("password", "SecurePassword123")
-  }
+    form.setValue("email", "john.doe@example.com");
+    form.setValue("password", "SecurePassword123");
+  };
 
   const fillAdminCredentials = () => {
-    form.setValue("email", "admin@admin.com")
-    form.setValue("password", "securePassword")
-  }
+    form.setValue("email", "admin@admin.com");
+    form.setValue("password", "securePassword");
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 dark:from-indigo-900 dark:via-purple-900 dark:to-black flex items-center justify-center p-4 relative">
@@ -134,7 +167,12 @@ export default function SignInPage() {
         </Button>
       </div>
 
-      <motion.div variants={containerVariants} initial="hidden" animate="visible" className="w-full max-w-md">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="w-full max-w-md"
+      >
         <motion.div variants={cardVariants} whileHover="hover" whileTap="tap">
           <Card className="backdrop-blur-sm bg-white/90 dark:bg-gray-900/90 shadow-2xl border-0">
             <CardHeader className="space-y-1 text-center">
@@ -147,7 +185,10 @@ export default function SignInPage() {
             </CardHeader>
             <CardContent>
               <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+                <form
+                  onSubmit={form.handleSubmit(onSubmit)}
+                  className="space-y-4"
+                >
                   <FormField
                     control={form.control}
                     name="email"
@@ -185,9 +226,15 @@ export default function SignInPage() {
                               tabIndex={-1}
                               className="absolute inset-y-0 right-2 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-200"
                               onClick={() => setShowPassword((v) => !v)}
-                              aria-label={showPassword ? "Hide password" : "Show password"}
+                              aria-label={
+                                showPassword ? "Hide password" : "Show password"
+                              }
                             >
-                              {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                              {showPassword ? (
+                                <EyeOff size={18} />
+                              ) : (
+                                <Eye size={18} />
+                              )}
                             </button>
                           </div>
                         </FormControl>
@@ -259,5 +306,5 @@ export default function SignInPage() {
         </motion.div>
       </motion.div>
     </div>
-  )
+  );
 }
