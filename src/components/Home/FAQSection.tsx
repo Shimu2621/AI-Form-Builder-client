@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion, easeInOut } from "framer-motion"
-import { useState } from "react"
-import { ChevronDown } from "lucide-react"
+import { motion, easeInOut } from "framer-motion";
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.6 },
-}
+};
 
 const staggerContainer = {
   animate: {
@@ -16,7 +16,7 @@ const staggerContainer = {
       staggerChildren: 0.1,
     },
   },
-}
+};
 
 const bubbleVariants = {
   animate: {
@@ -29,7 +29,7 @@ const bubbleVariants = {
       ease: easeInOut,
     },
   },
-}
+};
 
 const faqs = [
   {
@@ -40,7 +40,7 @@ const faqs = [
   {
     question: "How does the AI Form Generator work?",
     answer:
-      "Our AI analyzes your text prompt to understand what type of form you need, then automatically generates the appropriate form fields, validation rules, and layout. It uses advanced natural language processing to interpret your requirements and creates forms that match industry best practices and user experience standards.",
+      "Our AI analyzes your text prompt to understand what type of form you need, then automatically generates the appropriate form fields, validation rules, and layouts. It uses advanced natural language processing to interpret your requirements and creates forms that match industry best practices and user experience standards.",
   },
   {
     question: "Can I use the AI Form Generator for free?",
@@ -57,14 +57,14 @@ const faqs = [
     answer:
       "Yes, you have full control over customization! After the AI generates your form, you can modify fields, change styling, add your branding, adjust validation rules, and configure advanced features like conditional logic, integrations, and custom thank-you pages. The AI creates a solid foundation that you can tailor to your exact needs.",
   },
-]
+];
 
 interface FAQItemProps {
-  question: string
-  answer: string
-  isOpen: boolean
-  onToggle: () => void
-  index: number
+  question: string;
+  answer: string;
+  isOpen: boolean;
+  onToggle: () => void;
+  index: number;
 }
 
 function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
@@ -80,7 +80,10 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
         onClick={onToggle}
       >
         <h3 className="text-lg font-semibold pr-4">{question}</h3>
-        <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.2 }}
+        >
           <ChevronDown className="w-5 h-5 text-muted-foreground" />
         </motion.div>
       </button>
@@ -98,7 +101,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
         </div>
       </motion.div>
     </motion.div>
-  )
+  );
 }
 
 function AnimatedBubbles() {
@@ -108,7 +111,7 @@ function AnimatedBubbles() {
     left: Math.random() * 100,
     top: Math.random() * 100,
     delay: Math.random() * 2,
-  }))
+  }));
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -133,15 +136,17 @@ function AnimatedBubbles() {
         />
       ))}
     </div>
-  )
+  );
 }
 
 export function FAQSection() {
-  const [openItems, setOpenItems] = useState<number[]>([])
+  const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (index: number) => {
-    setOpenItems((prev) => (prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]))
-  }
+    setOpenItems((prev) =>
+      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
+    );
+  };
 
   return (
     <section className="relative py-20 px-4 bg-gradient-to-br from-slate-50 via-purple-50/50 to-pink-50/30 dark:from-slate-900 dark:via-purple-900/20 dark:to-pink-900/10 overflow-hidden">
@@ -187,7 +192,9 @@ export function FAQSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
             FAQs
           </h2>
-          <p className="text-xl text-muted-foreground">Everything you need to know about our AI Form Generator</p>
+          <p className="text-xl text-muted-foreground">
+            Everything you need to know about our AI Form Generator
+          </p>
         </motion.div>
 
         <motion.div
@@ -210,5 +217,5 @@ export function FAQSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
