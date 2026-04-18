@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Brain, Zap, Shield, BarChart3 } from "lucide-react"
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Brain, Zap, Shield, BarChart3 } from "lucide-react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.6 },
-}
+};
 
 const staggerContainer = {
   animate: {
@@ -16,7 +16,7 @@ const staggerContainer = {
       staggerChildren: 0.1,
     },
   },
-}
+};
 
 const features = [
   {
@@ -39,11 +39,14 @@ const features = [
     title: "Advanced Analytics",
     description: "Get insights on form performance and user behavior",
   },
-]
+];
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="py-20 px-4 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/30 dark:from-slate-900 dark:via-blue-950/30 dark:to-purple-950/30">
+    <section
+      id="features"
+      className="py-20 px-4 bg-gradient-to-br from-slate-50 via-blue-50/30 to-purple-50/30 dark:from-slate-900 dark:via-blue-950/30 dark:to-purple-950/30"
+    >
       <div className="container mx-auto ">
         <motion.div
           className="text-center mb-16"
@@ -51,10 +54,13 @@ export function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Unlock the Full Power of AI</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Unlock the Full Power of AI
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our AI doesn&apos;t just create forms—it understands your needs and builds intelligent, responsive forms that
-            work perfectly for your use case.
+            Our AI doesn&apos;t just create forms—it understands your needs and
+            builds intelligent, responsive forms that work perfectly for your
+            use cases.
           </p>
         </motion.div>
 
@@ -87,5 +93,5 @@ export function FeaturesSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
