@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Star, ChevronLeft, ChevronRight } from "lucide-react"
-import { useState, useEffect, useCallback } from "react"
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect, useCallback } from "react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.6 },
-}
+};
 
 const testimonials = [
   {
@@ -17,7 +17,7 @@ const testimonials = [
     role: "Marketing Director",
     company: "TechCorp",
     content:
-      "This AI form builder saved us weeks of development time. The forms it generates are incredibly professional and exactly what we needed.",
+      "This AI form builder saved us weeks of development times. The forms it generates are incredibly professional and exactly what we needed.",
     rating: 5,
     avatar: "SC",
   },
@@ -84,66 +84,68 @@ const testimonials = [
     rating: 5,
     avatar: "AT",
   },
-]
+];
 
 export function TestimonialsSection() {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isHovered, setIsHovered] = useState(false)
-  const [cardsPerView, setCardsPerView] = useState(3)
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const [cardsPerView, setCardsPerView] = useState(3);
 
   // Responsive cards per view
   useEffect(() => {
     const updateCardsPerView = () => {
       if (window.innerWidth >= 1024) {
-        setCardsPerView(3) // Desktop: 3 cards
+        setCardsPerView(3); // Desktop: 3 cards
       } else if (window.innerWidth >= 768) {
-        setCardsPerView(2) // Tablet: 2 cards
+        setCardsPerView(2); // Tablet: 2 cards
       } else {
-        setCardsPerView(1) // Mobile: 1 card
+        setCardsPerView(1); // Mobile: 1 card
       }
-    }
+    };
 
-    updateCardsPerView()
-    window.addEventListener("resize", updateCardsPerView)
-    return () => window.removeEventListener("resize", updateCardsPerView)
-  }, [])
+    updateCardsPerView();
+    window.addEventListener("resize", updateCardsPerView);
+    return () => window.removeEventListener("resize", updateCardsPerView);
+  }, []);
 
   // Auto-slide functionality
   useEffect(() => {
     if (!isHovered) {
       const timer = setInterval(() => {
         setCurrentIndex((prevIndex) => {
-          const maxIndex = testimonials.length - cardsPerView
-          return prevIndex >= maxIndex ? 0 : prevIndex + 1
-        })
-      }, 4000)
+          const maxIndex = testimonials.length - cardsPerView;
+          return prevIndex >= maxIndex ? 0 : prevIndex + 1;
+        });
+      }, 4000);
 
-      return () => clearInterval(timer)
+      return () => clearInterval(timer);
     }
-  }, [isHovered, cardsPerView])
+  }, [isHovered, cardsPerView]);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => {
-      const maxIndex = testimonials.length - cardsPerView
-      return prevIndex >= maxIndex ? 0 : prevIndex + 1
-    })
-  }, [cardsPerView])
+      const maxIndex = testimonials.length - cardsPerView;
+      return prevIndex >= maxIndex ? 0 : prevIndex + 1;
+    });
+  }, [cardsPerView]);
 
   const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => {
-      const maxIndex = testimonials.length - cardsPerView
-      return prevIndex <= 0 ? maxIndex : prevIndex - 1
-    })
-  }, [cardsPerView])
+      const maxIndex = testimonials.length - cardsPerView;
+      return prevIndex <= 0 ? maxIndex : prevIndex - 1;
+    });
+  }, [cardsPerView]);
 
   const goToSlide = (index: number) => {
-    const maxIndex = testimonials.length - cardsPerView
-    setCurrentIndex(Math.min(index, maxIndex))
-  }
-
+    const maxIndex = testimonials.length - cardsPerView;
+    setCurrentIndex(Math.min(index, maxIndex));
+  };
 
   return (
-    <section id="testimonials" className="py-20 px-4 bg-gradient-to-b from-background to-muted/20">
+    <section
+      id="testimonials"
+      className="py-20 px-4 bg-gradient-to-b from-background to-muted/20"
+    >
       <div className="container mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -151,9 +153,12 @@ export function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Users Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            What Our Users Say
+          </h2>
           <p className="text-xl text-muted-foreground">
-            Join thousands of satisfied customers who&apos;ve transformed their form creation process
+            Join thousands of satisfied customers who&apos;ve transformed their
+            form creation process
           </p>
         </motion.div>
 
@@ -235,22 +240,22 @@ export function TestimonialsSection() {
 
           {/* Dots indicator */}
           <div className="flex justify-center space-x-2 mt-8">
-            {Array.from({ length: testimonials.length - cardsPerView + 1 }).map((_, index) => (
-              <button
-                key={index}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentIndex
-                    ? "bg-primary scale-110"
-                    : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                }`}
-                onClick={() => goToSlide(index)}
-              />
-            ))}
+            {Array.from({ length: testimonials.length - cardsPerView + 1 }).map(
+              (_, index) => (
+                <button
+                  key={index}
+                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                    index === currentIndex
+                      ? "bg-primary scale-110"
+                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                  onClick={() => goToSlide(index)}
+                />
+              ),
+            )}
           </div>
         </div>
-
-      
       </div>
     </section>
-  )
+  );
 }
