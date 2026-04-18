@@ -42,7 +42,7 @@ const testimonials = [
   {
     name: "David Kim",
     role: "CEO",
-    company: "GrowthTech",
+    company: "GrowthTechs",
     content:
       "Absolutely revolutionary! Our conversions rates improved by 40% after switching to AI-generated forms. The customization options are endless.",
     rating: 5,
