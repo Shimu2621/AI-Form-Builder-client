@@ -50,7 +50,7 @@ export function UseCasesSection() {
             Create Any Form with a Prompt
           </h2>
           <p className="text-xl text-muted-foreground">
-            From simple contact forms to complex multi-step surveys
+            From simple contact forms to complex multi-steps surveys
           </p>
         </motion.div>
 
