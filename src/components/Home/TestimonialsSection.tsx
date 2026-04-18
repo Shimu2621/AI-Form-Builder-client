@@ -158,7 +158,7 @@ export function TestimonialsSection() {
           </h2>
           <p className="text-xl text-muted-foreground">
             Join thousands of satisfied customers who&apos;ve transformed their
-            form creation process
+            forms creation process
           </p>
         </motion.div>
 
