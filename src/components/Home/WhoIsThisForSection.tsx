@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion, easeInOut } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
+import { motion, easeInOut } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Mail,
   Users,
@@ -14,14 +14,14 @@ import {
   Sparkles,
   Zap,
   Rocket,
-} from "lucide-react"
-import Image from "next/image"
+} from "lucide-react";
+import Image from "next/image";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 60 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
-}
+};
 
 const staggerContainer = {
   animate: {
@@ -29,7 +29,7 @@ const staggerContainer = {
       staggerChildren: 0.2,
     },
   },
-}
+};
 
 const floatingAnimation = {
   animate: {
@@ -41,7 +41,7 @@ const floatingAnimation = {
       ease: easeInOut,
     },
   },
-}
+};
 
 const userTypes = [
   {
@@ -51,12 +51,13 @@ const userTypes = [
     bgColor: "from-purple-500 via-pink-500 to-rose-500",
     darkBgColor: "dark:from-purple-600 dark:via-pink-600 dark:to-rose-600",
     illustration: Laptop,
-    image: "https://cronuts.digital/wp-content/uploads/2023/08/digital-marketer.jpg",
+    image:
+      "https://cronuts.digital/wp-content/uploads/2023/08/digital-marketer.jpg",
     accent: "purple",
   },
   {
     title: "HR Teams",
-    description: "Create job applications, onboarding, and feedback forms",
+    description: "Create job applications, onboardings, and feedback forms",
     icon: Users,
     bgColor: "from-blue-500 via-cyan-500 to-teal-500",
     darkBgColor: "dark:from-blue-600 dark:via-cyan-600 dark:to-teal-600",
@@ -78,7 +79,8 @@ const userTypes = [
   },
   {
     title: "Founders",
-    description: "Validate ideas fast with no code prototypes. Test concepts with real users.",
+    description:
+      "Validate ideas fast with no code prototypes. Test concepts with real users.",
     icon: Lightbulb,
     bgColor: "from-orange-500 via-red-500 to-pink-500",
     darkBgColor: "dark:from-orange-600 dark:via-red-600 dark:to-pink-600",
@@ -86,14 +88,14 @@ const userTypes = [
     image: "https://www.chicagoinstituteofbusiness.com/blog/sales.jpg",
     accent: "orange",
   },
-]
+];
 
 const floatingElements = [
   { icon: Sparkles, delay: 0, x: "10%", y: "20%" },
   { icon: Zap, delay: 2, x: "80%", y: "30%" },
   { icon: Rocket, delay: 4, x: "15%", y: "70%" },
   { icon: Star, delay: 1, x: "85%", y: "80%" },
-]
+];
 
 export function WhoIsThisForSection() {
   return (
@@ -165,8 +167,8 @@ export function WhoIsThisForSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            Our AI form builder is designed for teams and individuals who want to create professional forms quickly and
-            effortlessly
+            Our AI form builder is designed for teams and individuals who want
+            to create professional forms quickly and effortlessly
           </motion.p>
         </motion.div>
 
@@ -242,7 +244,9 @@ export function WhoIsThisForSection() {
                         >
                           {userType.title}
                         </motion.h3>
-                        <p className="text-muted-foreground text-lg leading-relaxed">{userType.description}</p>
+                        <p className="text-muted-foreground text-lg leading-relaxed">
+                          {userType.description}
+                        </p>
                       </div>
 
                       <motion.div
@@ -289,7 +293,11 @@ export function WhoIsThisForSection() {
               {[
                 { icon: Target, text: "No coding required", color: "purple" },
                 { icon: Zap, text: "Ready in seconds", color: "blue" },
-                { icon: Sparkles, text: "Professional results", color: "green" },
+                {
+                  icon: Sparkles,
+                  text: "Professional results",
+                  color: "green",
+                },
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -317,5 +325,5 @@ export function WhoIsThisForSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
