@@ -28,7 +28,7 @@ const useCases = [
   },
   {
     title: "Registration Forms",
-    description: "Event and user registration with custom fields",
+    description: "Event and user registrations with custom fields",
   },
   {
     title: "Feedback Forms",
