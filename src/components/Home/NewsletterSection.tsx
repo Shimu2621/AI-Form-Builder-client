@@ -1,31 +1,31 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { toast } from "sonner"
-import { cn } from "@/lib/utils"
-import Link from "next/link"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { toast } from "sonner";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 export default function NewsletterSection() {
-  const [email, setEmail] = useState("")
-  const [isSubscribing, setIsSubscribing] = useState(false)
+  const [email, setEmail] = useState("");
+  const [isSubscribing, setIsSubscribing] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubscribing(true)
-// Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 3000))
-    setIsSubscribing(false)
+    e.preventDefault();
+    setIsSubscribing(true);
+    // Simulate API call
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+    setIsSubscribing(false);
     if (email) {
-      toast.success("Successfully subscribed to our newsletter!")
-      setEmail("") // Clear email input
+      toast.success("Successfully subscribed to our newsletter!");
+      setEmail(""); // Clear email input
     } else {
-      toast.error("Please enter a valid email address.")
+      toast.error("Please enter a valid email address.");
     }
-  }
+  };
 
   return (
     <section
@@ -40,7 +40,8 @@ export default function NewsletterSection() {
               Stay Updated with Our Newsletter
             </h2>
             <p className="max-w-[700px] text-muted md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Subscribe to get the latest news, updates, and exclusive offers delivered directly to your inbox.
+              Subscribe to get the latest news, updates, and exclusive offers
+              delivered directly to your inbox
             </p>
           </div>
           <div className="w-full max-w-sm space-y-2">
@@ -69,5 +70,5 @@ export default function NewsletterSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
