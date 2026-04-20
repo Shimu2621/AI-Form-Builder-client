@@ -168,7 +168,7 @@ export function WhoIsThisForSection() {
             transition={{ delay: 0.4 }}
           >
             Our AI form builder is designed for teams and individuals who want
-            to create professional forms quickly and effortlessly
+            to create professionals forms quickly and effortlessly
           </motion.p>
         </motion.div>
 
