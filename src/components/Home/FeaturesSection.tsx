@@ -27,7 +27,7 @@ const features = [
   {
     icon: Zap,
     title: "Lightning Fast",
-    description: "Generate professional forms in seconds, not hours",
+    description: "Generate professional form in seconds, not hours",
   },
   {
     icon: Shield,
