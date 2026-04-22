@@ -41,7 +41,7 @@ export default function NewsletterSection() {
             </h2>
             <p className="max-w-[700px] text-muted md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
               Subscribe to get the latest news, updates, and exclusive offers
-              delivered directly to your inbox
+              delivered directly to your inbox.
             </p>
           </div>
           <div className="w-full max-w-sm space-y-2">
