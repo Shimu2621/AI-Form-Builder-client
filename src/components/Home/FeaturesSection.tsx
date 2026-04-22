@@ -37,7 +37,7 @@ const features = [
   {
     icon: BarChart3,
     title: "Advanced Analytics",
-    description: "Get insights on form performances and user behaviors",
+    description: "Get insights on form performances and user behavior",
   },
 ];
 
