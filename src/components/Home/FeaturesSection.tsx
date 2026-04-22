@@ -22,7 +22,7 @@ const features = [
   {
     icon: Brain,
     title: "AI-Powered Generation",
-    description: "Create complex forms instantly with natural language prompts",
+    description: "Create complex forms instantly with natural language prompt",
   },
   {
     icon: Zap,
