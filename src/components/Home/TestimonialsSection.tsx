@@ -26,7 +26,7 @@ const testimonials = [
     role: "HR Manager",
     company: "StartupXYZ",
     content:
-      "The best form builder I've used. The AI understands exactly what we need and creates perfect forms every time. Highly recommended!",
+      "The best form builder I've used. The AI understands exactly what we needs and creates perfect forms every time. Highly recommended!",
     rating: 5,
     avatar: "MR",
   },
