@@ -53,7 +53,7 @@ const testimonials = [
     role: "UX Designer",
     company: "DesignStudio",
     content:
-      "As a designer, I'm impressed by the aesthetic quality of the generated forms. They're not just functional, but beautiful too.",
+      "As a designer, I'm impressed by the aesthetic quality of the generated forms. They're not just functionals, but beautiful too.",
     rating: 5,
     avatar: "LW",
   },
