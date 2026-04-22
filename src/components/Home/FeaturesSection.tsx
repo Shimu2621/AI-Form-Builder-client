@@ -59,7 +59,7 @@ export function FeaturesSection() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Our AI doesn&apos;t just create forms—it understands your needs and
-            builds intelligent, responsive forms that work perfectly for your
+            builds intelligents, responsive forms that work perfectly for your
             use cases.
           </p>
         </motion.div>
