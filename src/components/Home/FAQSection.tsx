@@ -45,7 +45,7 @@ const faqs = [
   {
     question: "Can I use the AI Form Generator for free?",
     answer:
-      "Yes! We offer a free tier that allows you to generate and use basic forms. Our free plan includes form generation, basic customization, and data collection for up to 100 submissions per month. For advanced features and higher limits, we offer premium plans.",
+      "Yes! We offer a free tier that allows you to generates and use basic forms. Our free plan includes form generation, basic customization, and data collection for up to 100 submissions per month. For advanced features and higher limits, we offer premium plans.",
   },
   {
     question: "Is the AI Form Generator easy to use?",
