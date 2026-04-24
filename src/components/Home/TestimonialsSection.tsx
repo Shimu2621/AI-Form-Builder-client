@@ -17,7 +17,7 @@ const testimonials = [
     role: "Marketing Director",
     company: "TechCorp",
     content:
-      "This AI form builder saved us weeks of development times. The forms it generates are incredibly professional and exactly what we need.",
+      "This AI form builder saved us weeks of development time. The forms it generates are incredibly professional and exactly what we need",
     rating: 5,
     avatar: "SC",
   },
@@ -26,7 +26,7 @@ const testimonials = [
     role: "HR Manager",
     company: "StartupXYZ",
     content:
-      "The best form builder I've used. The AI understands exactly what we needs and creates perfect forms every time. Highly recommended!",
+      "The best form builder I’ve used. The AI understands exactly what we need and creates perfect forms every time. Highly recommended!",
     rating: 5,
     avatar: "MR",
   },
@@ -35,7 +35,7 @@ const testimonials = [
     role: "Product Manager",
     company: "InnovateLab",
     content:
-      "Game-changer for our teams. We can now creates complex surveys and forms without any technical knowledge. The AI is incredibly intuitives.",
+      "A game-changer for our team. We can now create complex surveys and forms without any technical knowledge. The AI is incredibly intuitive.",
     rating: 5,
     avatar: "EJ",
   },
