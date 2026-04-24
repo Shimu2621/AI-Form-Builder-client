@@ -80,7 +80,7 @@ const testimonials = [
     role: "CTO",
     company: "DevSolutions",
     content:
-      "The technical implementation is flawless. Integration was seamless, and the performance is outstanding. Our developers love it too.",
+      "The technical implementation is flawless. The integration was seamless, and the performance is outstanding. Our developers love it too",
     rating: 5,
     avatar: "AT",
   },
