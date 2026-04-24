@@ -17,7 +17,7 @@ const testimonials = [
     role: "Marketing Director",
     company: "TechCorp",
     content:
-      "This AI form builder saved us weeks of development times. The forms it generates are incredibly professional and exactly what we needed.",
+      "This AI form builder saved us weeks of development times. The forms it generates are incredibly professional and exactly what we need.",
     rating: 5,
     avatar: "SC",
   },
