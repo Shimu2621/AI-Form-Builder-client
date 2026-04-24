@@ -67,7 +67,7 @@ const ResponseTable = ({ id }: { id: string }) => {
         });
 
         return row;
-      })
+      }),
     );
 
     const workbook = XLSX.utils.book_new();
@@ -136,7 +136,7 @@ const ResponseTable = ({ id }: { id: string }) => {
                                 </p>
                                 <p>{value}</p>
                               </div>
-                            )
+                            ),
                           )}
                         </div>
                       </DialogContent>
