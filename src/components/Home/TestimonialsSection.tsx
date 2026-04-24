@@ -71,7 +71,7 @@ const testimonials = [
     role: "Sales Director",
     company: "SalesForce Pro",
     content:
-      "Our lead generations has never been better. The AI creates forms that actually convert visitors into customers. ROI has been amazing.",
+      "Our lead generation has never been better. The AI creates forms that actually convert visitors into customers. The ROI has been amazing.",
     rating: 5,
     avatar: "MG",
   },
