@@ -43,6 +43,7 @@ export function HeroContent({
     }
     setIsTitleDialogOpen(true);
   };
+
   return (
     <motion.div
       className="text-center space-y-8 py-24"
@@ -79,7 +80,7 @@ export function HeroContent({
         variants={fadeInUp}
       >
         Create professional forms, surveys, and quizzes instantly with our
-        AI-powered form builder. Just describe what you need, and watch the
+        AI-powered form builder. Just describes what you need, and watch the
         magic happen.
       </motion.p>
 
