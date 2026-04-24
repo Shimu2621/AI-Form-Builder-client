@@ -35,7 +35,7 @@ const faqs = [
   {
     question: "What is an 'AI Form Generator'?",
     answer:
-      "An AI Form Generator is a smart tool that uses artificial intelligence to automatically create professional forms, surveys, and quizzes based on your natural language descriptions. Simply tell it what kind of form you need, and it will generate a complete, functional form with appropriate fields, validation, and styling.",
+      "An AI Form Generator is a smart tool that uses artificial intelligence to automatically creates professional forms, surveys, and quizzes based on your natural language descriptions. Simply tell it what kind of form you need, and it will generate a complete, functional form with appropriate fields, validation, and styling.",
   },
   {
     question: "How does the AI Form Generator work?",
