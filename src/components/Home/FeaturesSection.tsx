@@ -58,7 +58,7 @@ export function FeaturesSection() {
             Unlock the Full Power of AI
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Our AI doesn&apos;t just create forms—it understands your needs and
+            Our AI doesn&apos;t just create forms—it understand your needs and
             builds intelligents, responsive forms that works perfectly for your
             use cases.
           </p>
