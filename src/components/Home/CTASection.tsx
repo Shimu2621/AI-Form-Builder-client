@@ -64,7 +64,7 @@ export function CTASection() {
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Join thousands of businesses already using AI to create better forms
+            Join thousands of business already using AI to create better forms
             faster.
           </motion.p>
           <motion.div
