@@ -97,7 +97,7 @@ export default function FormPage() {
               Form Not Available
             </h1>
             <p className="text-gray-600 dark:text-gray-300 text-lg mb-6 leading-relaxed">
-              This form is currently unpublished and not accepting respons.
+              This form is currently unpublished and not accepting response.
               Please contact the form owner for more information.
             </p>
           </motion.div>
