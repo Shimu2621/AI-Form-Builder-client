@@ -1,26 +1,26 @@
-"use client"
+"use client";
 
-import { useQuery } from "@tanstack/react-query"
-import { useParams, useRouter } from "next/navigation"
-import DynamicForm from "@/components/DynamicForm/DynamicForm"
-import { notFound } from "next/navigation"
-import api from "@/lib/axios"
-import { motion } from "framer-motion"
-import { FileX, Lock, AlertCircle } from "lucide-react"
+import { useQuery } from "@tanstack/react-query";
+import { useParams, useRouter } from "next/navigation";
+import DynamicForm from "@/components/DynamicForm/DynamicForm";
+import { notFound } from "next/navigation";
+import api from "@/lib/axios";
+import { motion } from "framer-motion";
+import { FileX, Lock, AlertCircle } from "lucide-react";
 
 export default function FormPage() {
-  const router = useRouter()
-  const params = useParams()
-  const id = Array.isArray(params.id) ? params.id[0] : params.id
+  const router = useRouter();
+  const params = useParams();
+  const id = Array.isArray(params.id) ? params.id[0] : params.id;
 
   const { data, isLoading, error } = useQuery({
     queryKey: ["form", id],
     queryFn: async () => {
-      const res = await api.get(`/form/${id}`)
-      return res.data
+      const res = await api.get(`/form/${id}`);
+      return res.data;
     },
     enabled: !!id,
-  })
+  });
 
   if (isLoading) {
     return (
@@ -34,19 +34,25 @@ export default function FormPage() {
           <motion.div
             className="w-12 h-12 mx-auto mb-4 border-4 border-blue-500 border-t-transparent rounded-full"
             animate={{ rotate: 360 }}
-            transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+            transition={{
+              duration: 1,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "linear",
+            }}
           />
-          <p className="text-gray-600 dark:text-gray-300 text-lg">Loading form...</p>
+          <p className="text-gray-600 dark:text-gray-300 text-lg">
+            Loading form...
+          </p>
         </motion.div>
       </div>
-    )
+    );
   }
 
   if (error || !data?.success || !data.data) {
-    notFound()
+    notFound();
   }
 
-  const formData = data.data
+  const formData = data.data;
 
   // Check if form is published
   if (!formData.isPublished) {
@@ -62,7 +68,12 @@ export default function FormPage() {
             className="relative mb-8"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.5, type: "spring", stiffness: 200 }}
+            transition={{
+              delay: 0.2,
+              duration: 0.5,
+              type: "spring",
+              stiffness: 200,
+            }}
           >
             <div className="w-24 h-24 mx-auto bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-lg">
               <Lock className="w-12 h-12 text-white" />
@@ -82,10 +93,12 @@ export default function FormPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.5 }}
           >
-            <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">Form Not Available</h1>
+            <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
+              Form Not Available
+            </h1>
             <p className="text-gray-600 dark:text-gray-300 text-lg mb-6 leading-relaxed">
-              This form is currently unpublished and not accepting responses. Please contact the form owner for more
-              information.
+              This form is currently unpublished and not accepting respons.
+              Please contact the form owner for more information.
             </p>
           </motion.div>
 
@@ -97,7 +110,9 @@ export default function FormPage() {
           >
             <div className="flex items-center justify-center space-x-3 text-gray-500 dark:text-gray-400">
               <FileX className="w-5 h-5" />
-              <span className="text-sm font-medium">Form Status: Unpublished</span>
+              <span className="text-sm font-medium">
+                Form Status: Unpublished
+              </span>
             </div>
           </motion.div>
 
@@ -111,14 +126,14 @@ export default function FormPage() {
               className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-200"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => router.push('/')}
+              onClick={() => router.push("/")}
             >
               Go Back
             </motion.button>
           </motion.div>
         </motion.div>
       </div>
-    )
+    );
   }
 
   // const handleFormSubmit = (formValues: Record<string, any>) => {
@@ -139,8 +154,12 @@ export default function FormPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}
         >
-          <h1 className="text-3xl font-bold mb-3 text-gray-900 dark:text-white">{formData.title}</h1>
-          <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">{formData.description}</p>
+          <h1 className="text-3xl font-bold mb-3 text-gray-900 dark:text-white">
+            {formData.title}
+          </h1>
+          <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+            {formData.description}
+          </p>
         </motion.div>
 
         <motion.div
@@ -152,5 +171,5 @@ export default function FormPage() {
         </motion.div>
       </motion.div>
     </div>
-  )
+  );
 }
