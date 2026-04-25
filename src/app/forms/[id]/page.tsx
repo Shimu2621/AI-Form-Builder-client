@@ -98,7 +98,7 @@ export default function FormPage() {
             </h1>
             <p className="text-gray-600 dark:text-gray-300 text-lg mb-6 leading-relaxed">
               This form is currently unpublished and not accepting response.
-              Please contact the form owner for more information.
+              Please contact the form owner for more informations.
             </p>
           </motion.div>
 
