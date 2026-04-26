@@ -81,7 +81,7 @@ export function HeroContent({
       >
         Create professional forms, surveys, and quizzes instantly with our
         AI-powered form builder. Just describes what you need, and watch the
-        magic happen.
+        magic happens.
       </motion.p>
 
       <motion.div className="max-w-2xl mx-auto" variants={fadeInUp}>
