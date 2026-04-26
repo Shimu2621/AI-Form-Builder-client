@@ -35,7 +35,7 @@ const testimonials = [
     role: "Product Manager",
     company: "InnovateLab",
     content:
-      "A game-changer for our team. We can now create complex surveys and forms without any technical knowledge. The AI is incredibly intuitive.",
+      "A game-changer for our teams. We can now create complex surveys and forms without any technical knowledge. The AI is incredibly intuitive.",
     rating: 5,
     avatar: "EJ",
   },
