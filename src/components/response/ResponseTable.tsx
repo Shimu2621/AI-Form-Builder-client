@@ -148,7 +148,7 @@ const ResponseTable = ({ id }: { id: string }) => {
           </Table>
         </div>
       ) : (
-        <div className="text-center text-gray-500">No responses found </div>
+        <div className="text-center text-gray-500">No responses found yet</div>
       )}
     </div>
   );
