@@ -62,7 +62,7 @@ const testimonials = [
     role: "Operations Manager",
     company: "LogisticsPro",
     content:
-      "The automation features are incredible. We've streamlined our entire data collection process and saved countless hours of manual work.",
+      "The automation features are incredible. We've streamlined our entire data collections process and saved countless hours of manual work.",
     rating: 5,
     avatar: "JT",
   },
