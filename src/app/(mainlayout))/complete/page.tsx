@@ -48,7 +48,7 @@ function CompletePageContent() {
     queryFn: async () => {
       if (!sessionId) throw new Error("No session ID provided");
       const response = await api.get<PaymentCompleteResponse>(
-        `/payment/complete?session_id=${sessionId}`
+        `/payment/complete?session_id=${sessionId}`,
       );
       return response.data;
     },
@@ -286,7 +286,7 @@ function CompletePageContent() {
                 <div class="detail-row">
                   <span class="detail-label">Plan:</span>
                   <span class="detail-value">${getPlanDisplayName(
-                    subscription.planName
+                    subscription.planName,
                   )}</span>
                 </div>
                 <div class="detail-row">
@@ -296,7 +296,7 @@ function CompletePageContent() {
                 <div class="detail-row">
                   <span class="detail-label">Amount:</span>
                   <span class="detail-value amount">${getPlanPrice(
-                    subscription.planName
+                    subscription.planName,
                   )}</span>
                 </div>
               </div>
@@ -310,13 +310,13 @@ function CompletePageContent() {
                 <div class="detail-row">
                   <span class="detail-label">Transaction ID:</span>
                   <span class="detail-value" style="font-family: monospace; font-size: 12px;">${subscription.stripeSubscriptionId.slice(
-                    -12
+                    -12,
                   )}</span>
                 </div>
                 <div class="detail-row">
                   <span class="detail-label">Payment Date:</span>
                   <span class="detail-value">${formatDate(
-                    subscription.startedAt
+                    subscription.startedAt,
                   )}</span>
                 </div>
               </div>
@@ -328,19 +328,19 @@ function CompletePageContent() {
                 <div class="detail-row">
                   <span class="detail-label">Started:</span>
                   <span class="detail-value">${formatDate(
-                    subscription.startedAt
+                    subscription.startedAt,
                   )}</span>
                 </div>
                 <div class="detail-row">
                   <span class="detail-label">Ends:</span>
                   <span class="detail-value">${formatDate(
-                    subscription.endsAt
+                    subscription.endsAt,
                   )}</span>
                 </div>
               </div>
               <p style="text-align: center; color: #64748b; font-size: 14px; margin: 10px 0 0 0;">
                 Your subscription will auto-renew on <strong>${new Date(
-                  subscription.endsAt
+                  subscription.endsAt,
                 ).toLocaleDateString()}</strong>
               </p>
             </div>
@@ -717,7 +717,7 @@ function CompletePageContent() {
               <div className="text-center text-sm text-gray-500 dark:text-gray-400">
                 <p>
                   Thank you for your business! If you have any questions, please
-                  contact our support team.
+                  contact our support teams.
                 </p>
                 <p className="mt-1">
                   Generated on {formatDate(new Date().toISOString())}
