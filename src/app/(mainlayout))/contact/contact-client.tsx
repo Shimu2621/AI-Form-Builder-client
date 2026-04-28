@@ -20,7 +20,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 
-
 export default function ContactPage() {
   const form = useRef<HTMLFormElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -38,7 +37,7 @@ export default function ContactPage() {
           form.current,
           {
             publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
-          }
+          },
         );
 
         setIsSubmitted(true);
@@ -75,7 +74,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Visit Us",
-      description: "Come say hello at our office",
+      description: "Come and say hello at our office",
       value: "123 Innovation St, Tech City, TC 12345",
       color: "purple",
     },
@@ -83,7 +82,6 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50 dark:from-gray-900 dark:via-orange-900/10 dark:to-gray-900">
-
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 dark:from-purple-400/5 dark:to-pink-400/5" />
@@ -185,7 +183,8 @@ export default function ContactPage() {
               Send us a Message
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Fill out the form below and we&apos;ll get back to you within 24 hours.
+              Fill out the form below and we&apos;ll get back to you within 24
+              hours.
             </p>
           </motion.div>
 
@@ -215,8 +214,8 @@ export default function ContactPage() {
                       Message Sent Successfully!
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-6">
-                      Thank you for reaching out. We&apos;ll get back to you within
-                      24 hours.
+                      Thank you for reaching out. We&apos;ll get back to you
+                      within 24 hours.
                     </p>
                     <Button
                       onClick={() => setIsSubmitted(false)}
