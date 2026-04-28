@@ -161,7 +161,7 @@ export default function PricingPage() {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
           >
-            Start building amazing forms today. Upgrade anytime as your needs
+            Start building amazing form today. Upgrade anytime as your needs
             grow.
           </motion.p>
         </motion.div>
