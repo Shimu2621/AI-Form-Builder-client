@@ -75,7 +75,7 @@ export default function ContactPage() {
       icon: MapPin,
       title: "Visit Us",
       description: "Come and say hello at our office",
-      value: "123 Innovation St, Tech City, TC 12345",
+      value: "123 Innovation Court St, Tech City, TC 12345",
       color: "purple",
     },
   ];
