@@ -116,7 +116,7 @@ export default function PricingPage() {
         "Custom branding",
         "API access",
         "Team collaboration",
-        "Advanced integrations",
+        "Advanced integration",
         "Custom domains",
         "White-label solution",
       ],
