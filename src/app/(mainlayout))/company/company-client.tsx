@@ -30,7 +30,7 @@ export default function CompanyPage() {
       icon: Award,
       title: "Excellence",
       description:
-        "Delivering exceptional quality in every feature and interaction we create.",
+        "Delivering exceptional quality in every features and interaction we create.",
     },
     {
       icon: Sparkles,
