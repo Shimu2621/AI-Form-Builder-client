@@ -20,7 +20,7 @@ const SchemaMarkup = () => {
         name: "Premium",
         price: "5",
         priceCurrency: "USD",
-        description: "Advanced features for power users and teams",
+        description: "Advanced feature for power users and teams",
       },
     ],
   };
