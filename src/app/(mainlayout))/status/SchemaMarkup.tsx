@@ -52,7 +52,7 @@ const SchemaMarkup = () => {
           item: {
             "@type": "Service",
             name: "Form Builder",
-            description: "The core form building application.",
+            description: "The core form building applications.",
           },
         },
         {
