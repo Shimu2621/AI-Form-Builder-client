@@ -5,7 +5,7 @@ import CompanyWrapper from "./CompanyWrapper";
 export const metadata: Metadata = {
   title: "Our Mission | AI Form Builder",
   description:
-    "Learn about the missions, values, and stories of AI Form Builder. We are dedicated to making form building accessible, intuitive, and powerful for creators everywhere.",
+    "Learn about the missions, values, and stories of AI Form Builder. We are dedicated to making form building accessible, intuitive, and powerful for creator everywhere.",
 };
 
 export default function Page() {
