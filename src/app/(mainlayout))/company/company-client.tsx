@@ -36,7 +36,7 @@ export default function CompanyPage() {
       icon: Sparkles,
       title: "Simplicity",
       description:
-        "Making complex form building simples and accessible for everyone.",
+        "Making complex form building simple and accessible for everyone.",
     },
   ];
 
