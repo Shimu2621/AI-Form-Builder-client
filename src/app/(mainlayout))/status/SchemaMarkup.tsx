@@ -1,70 +1,69 @@
-
-import React from 'react';
+import React from "react";
 
 const SchemaMarkup = () => {
   const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: 'System Status',
-    description: 'Real-time status of our AI Form Builder services.',
-    url: 'https://aiformbuilder.com/status',
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: "System Status",
+    description: "Real-time status of our AI Form Builder service.",
+    url: "https://aiformbuilder.com/status",
     mainEntity: {
-      '@type': 'ItemList',
+      "@type": "ItemList",
       itemListElement: [
         {
-          '@type': 'ListItem',
+          "@type": "ListItem",
           position: 1,
           item: {
-            '@type': 'Service',
-            name: 'API Gateway',
-            description: 'Handles all incoming API requests.',
+            "@type": "Service",
+            name: "API Gateway",
+            description: "Handles all incoming API requests.",
           },
         },
         {
-          '@type': 'ListItem',
+          "@type": "ListItem",
           position: 2,
           item: {
-            '@type': 'Service',
-            name: 'Database',
-            description: 'Stores all user and form data.',
+            "@type": "Service",
+            name: "Database",
+            description: "Stores all user and form data.",
           },
         },
         {
-          '@type': 'ListItem',
+          "@type": "ListItem",
           position: 3,
           item: {
-            '@type': 'Service',
-            name: 'CDN',
-            description: 'Content Delivery Network for fast asset loading.',
+            "@type": "Service",
+            name: "CDN",
+            description: "Content Delivery Network for fast asset loading.",
           },
         },
         {
-          '@type': 'ListItem',
+          "@type": "ListItem",
           position: 4,
           item: {
-            '@type': 'Service',
-            name: 'Authentication',
-            description: 'User authentication and authorization services.',
+            "@type": "Service",
+            name: "Authentication",
+            description: "User authentication and authorization services.",
           },
         },
         {
-            '@type': 'ListItem',
-            position: 5,
-            item: {
-              '@type': 'Service',
-              name: 'Form Builder',
-              description: 'The core form building application.',
-            },
+          "@type": "ListItem",
+          position: 5,
+          item: {
+            "@type": "Service",
+            name: "Form Builder",
+            description: "The core form building application.",
           },
-          {
-            '@type': 'ListItem',
-            position: 6,
-            item: {
-              '@type': 'Service',
-              name: 'Email Service',
-              description: 'Handles sending of email notifications.',
-            },
+        },
+        {
+          "@type": "ListItem",
+          position: 6,
+          item: {
+            "@type": "Service",
+            name: "Email Service",
+            description: "Handles sending of email notifications.",
           },
+        },
       ],
     },
   };
