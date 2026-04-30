@@ -82,7 +82,7 @@ export default function CompanyPage() {
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed"
           >
             To innovate and empower the world by making form building
-            accessible, intuitive, and powerful for creators everywhere.
+            accessible, intuitive, and powerful for creator everywhere.
           </motion.p>
 
           <motion.div
