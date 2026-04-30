@@ -351,7 +351,7 @@ export default function PricingPage() {
                 icon: BarChart3,
                 title: "Advanced Analytics",
                 description:
-                  "Get detailed insights into form performance and users behavior",
+                  "Get detailed insights into form performance and user behavior",
               },
               {
                 icon: Shield,
