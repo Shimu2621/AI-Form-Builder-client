@@ -34,7 +34,7 @@ const SchemaMarkup = () => {
           item: {
             "@type": "Service",
             name: "CDN",
-            description: "Content Delivery Network for fast asset loading.",
+            description: "Content Delivery Network for fast assets loading.",
           },
         },
         {
