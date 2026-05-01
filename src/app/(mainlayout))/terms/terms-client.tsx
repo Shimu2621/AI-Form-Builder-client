@@ -15,7 +15,7 @@ export default function TermsPage() {
       id: "acceptance",
       title: "1. Acceptance of Terms",
       icon: CheckCircle,
-      content: `By accessing and using our form building platform, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by the above, please do not use this service.`,
+      content: `By accessing and using our form building platform, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by the above, please do not use this services.`,
     },
     {
       id: "description",
