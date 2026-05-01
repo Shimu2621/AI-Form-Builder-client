@@ -21,7 +21,7 @@ export default function TermsPage() {
       id: "description",
       title: "2. Service Description",
       icon: Users,
-      content: `Our platform provides form building tools and services that allow users to create, customize, and deploy forms for data collection. We reserve the right to modify, suspend, or discontinue any aspect of the service at any time.`,
+      content: `Our platform provides form building tools and services that allow users to create, customize, and deploy forms for data collections. We reserve the right to modify, suspend, or discontinue any aspect of the service at any time.`,
     },
     {
       id: "accounts",
