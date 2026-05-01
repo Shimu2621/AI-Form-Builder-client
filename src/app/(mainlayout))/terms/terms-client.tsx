@@ -1,7 +1,13 @@
-import { motion } from "framer-motion"
-import { Book, Shield, Users, AlertTriangle, CheckCircle, Scale } from "lucide-react"
+import { motion } from "framer-motion";
+import {
+  Book,
+  Shield,
+  Users,
+  AlertTriangle,
+  CheckCircle,
+  Scale,
+} from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-
 
 export default function TermsPage() {
   const sections = [
@@ -9,7 +15,7 @@ export default function TermsPage() {
       id: "acceptance",
       title: "1. Acceptance of Terms",
       icon: CheckCircle,
-      content: `By accessing and using our form building platform, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.`,
+      content: `By accessing and using our form building platform, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by the above, please do not use this service.`,
     },
     {
       id: "description",
@@ -65,29 +71,31 @@ export default function TermsPage() {
       icon: Book,
       content: `We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days notice prior to any new terms taking effect.`,
     },
-  ]
+  ];
 
   const highlights = [
     {
       title: "Fair Use Policy",
-      description: "We believe in fair and reasonable use of our platform for all users.",
+      description:
+        "We believe in fair and reasonable use of our platform for all users.",
       icon: Users,
     },
     {
       title: "Data Protection",
-      description: "Your data is protected with industry-standard security measures.",
+      description:
+        "Your data is protected with industry-standard security measures.",
       icon: Shield,
     },
     {
       title: "Transparent Pricing",
-      description: "No hidden fees or surprise charges in our pricing structure.",
+      description:
+        "No hidden fees or surprise charges in our pricing structure.",
       icon: CheckCircle,
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50 dark:from-gray-900 dark:via-indigo-900/10 dark:to-gray-900">
-
       {/* Hero Section */}
       <section className="relative overflow-hidden py-20 px-4">
         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/10 to-pink-600/10 dark:from-purple-400/5 dark:to-pink-400/5" />
@@ -109,7 +117,9 @@ export default function TermsPage() {
             className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6"
           >
             Terms of{" "}
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">Service</span>
+            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              Service
+            </span>
           </motion.h1>
 
           <motion.p
@@ -118,8 +128,8 @@ export default function TermsPage() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto mb-8"
           >
-            Our terms and conditions for using our services. Please read carefully to understand your rights and
-            responsibilities.
+            Our terms and conditions for using our services. Please read
+            carefully to understand your rights and responsibilities.
           </motion.p>
 
           <motion.div
@@ -142,7 +152,9 @@ export default function TermsPage() {
             transition={{ delay: 0.8, duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Key Highlights</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Key Highlights
+            </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               The most important aspects of our terms at a glance.
             </p>
@@ -150,7 +162,7 @@ export default function TermsPage() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {highlights.map((highlight, index) => {
-              const IconComponent = highlight.icon
+              const IconComponent = highlight.icon;
               return (
                 <motion.div
                   key={highlight.title}
@@ -164,12 +176,16 @@ export default function TermsPage() {
                       <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 rounded-2xl mb-6">
                         <IconComponent className="h-8 w-8 text-purple-600 dark:text-purple-400" />
                       </div>
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">{highlight.title}</h3>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{highlight.description}</p>
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                        {highlight.title}
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        {highlight.description}
+                      </p>
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </div>
@@ -194,7 +210,7 @@ export default function TermsPage() {
 
           <div className="space-y-8">
             {sections.map((section, index) => {
-              const IconComponent = section.icon
+              const IconComponent = section.icon;
               return (
                 <motion.div
                   key={section.id}
@@ -212,11 +228,13 @@ export default function TermsPage() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">{section.content}</p>
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
+                        {section.content}
+                      </p>
                     </CardContent>
                   </Card>
                 </motion.div>
-              )
+              );
             })}
           </div>
         </div>
@@ -235,10 +253,13 @@ export default function TermsPage() {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 rounded-2xl mb-6">
                   <AlertTriangle className="h-8 w-8 text-purple-600 dark:text-purple-400" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Questions About Our Terms?</h3>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  Questions About Our Terms?
+                </h3>
                 <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                  If you have any questions about these Terms of Service, please don&apos;t hesitate to contact us. We&apos;re
-                  here to help clarify any concerns you may have.
+                  If you have any questions about these Terms of Service, please
+                  don&apos;t hesitate to contact us. We&apos;re here to help
+                  clarify any concerns you may have.
                 </p>
                 <div className="text-purple-600 dark:text-purple-400 font-medium">
                   Email us at: legal@formbuilder.com
@@ -249,5 +270,5 @@ export default function TermsPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
