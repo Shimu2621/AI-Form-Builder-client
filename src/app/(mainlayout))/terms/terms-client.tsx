@@ -39,7 +39,7 @@ export default function TermsPage() {
       id: "privacy",
       title: "5. Privacy Policy",
       icon: Shield,
-      content: `Your privacy is important to us. Our Privacy Policy explains how we collect, use, and protect your information when you use our service. By using our service, you agree to the collections and use of information in accordance with our Privacy Policy.`,
+      content: `Your privacy is important to us. Our Privacy Policy explains how we collect, use, and protect your information when you use our services. By using our service, you agree to the collections and use of information in accordance with our Privacy Policy.`,
     },
     {
       id: "intellectual",
