@@ -27,7 +27,7 @@ export default function TermsPage() {
       id: "accounts",
       title: "3. User Accounts",
       icon: Shield,
-      content: `You are responsible for maintaining the confidentiality of your account and password. You agree to accept responsibility for all activities that occur under your account or password. You must notify us immediately of any unauthorized use of your account.`,
+      content: `You are responsible for maintaining the confidentiality of your account and password. You agree to accept responsibility for all activities that occur under your account or password. You must notify us immediately of any unauthorized use of your accounts.`,
     },
     {
       id: "usage",
