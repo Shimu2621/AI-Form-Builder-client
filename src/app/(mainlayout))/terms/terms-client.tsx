@@ -63,7 +63,7 @@ export default function TermsPage() {
       id: "governing",
       title: "9. Governing Law",
       icon: Scale,
-      content: `These Terms shall be interpreted and governed by the laws of the jurisdiction in which our company is incorporated, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights.`,
+      content: `These Terms shall be interpreted and governed by the laws of the jurisdiction in which our company is incorporated, without regard to its conflict of law provisions. Our failure to enforces any right or provision of these Terms will not be considered a waiver of those rights.`,
     },
     {
       id: "changes",
