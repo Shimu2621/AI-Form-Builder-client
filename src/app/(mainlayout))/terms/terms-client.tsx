@@ -45,7 +45,7 @@ export default function TermsPage() {
       id: "intellectual",
       title: "6. Intellectual Property",
       icon: Book,
-      content: `The service and its original content, features, and functionality are and will remain the exclusive property of our company and its licensors. The service is protected by copyright, trademark, and other laws.`,
+      content: `The service and its original content, features, and functionality are and will remain the exclusive property of our company and its licensors. The service is protected by copyright, trademarks, and other laws.`,
     },
     {
       id: "termination",
