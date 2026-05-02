@@ -51,7 +51,7 @@ export default function TermsPage() {
       id: "termination",
       title: "7. Termination",
       icon: AlertTriangle,
-      content: `We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever, including without limitation if you breach the Terms.`,
+      content: `We may terminate or suspend your account and bar access to the services immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever, including without limitation if you breach the Terms.`,
     },
     {
       id: "limitation",
