@@ -33,7 +33,7 @@ export default function TermsPage() {
       id: "usage",
       title: "4. Acceptable Use",
       icon: Scale,
-      content: `You agree not to use the service for any unlawful purposes or in any way that could damage, disable, overburden, or impair our servers or networks. You may not attempt to gain unauthorized access to any part of the service.`,
+      content: `You agree not to use the service for any unlawful purposes or in any way that could damage, disable, overburden, or impair our servers or networks. You may not attempt to gain unauthorized access to any part of the services.`,
     },
     {
       id: "privacy",
