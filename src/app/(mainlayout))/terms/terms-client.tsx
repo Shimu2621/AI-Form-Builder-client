@@ -57,7 +57,7 @@ export default function TermsPage() {
       id: "limitation",
       title: "8. Limitation of Liability",
       icon: Shield,
-      content: `In no event shall our company, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.`,
+      content: `In no event shall our company, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwills, or other intangible losses.`,
     },
     {
       id: "governing",
