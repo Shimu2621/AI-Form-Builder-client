@@ -156,7 +156,7 @@ export default function TermsPage() {
               Key Highlights
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              The most important aspects of our terms at a glance.
+              The most important aspects of our terms, at a glance.
             </p>
           </motion.div>
 
