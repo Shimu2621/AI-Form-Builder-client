@@ -77,7 +77,7 @@ export default function StatusPage() {
       status: "resolved",
       time: "1 day ago",
       description:
-        "Resolved issues with API rate limiting affecting form submissions.",
+        "Resolved issues with API rate limiting affecting form submission.",
       severity: "major",
     },
     {
