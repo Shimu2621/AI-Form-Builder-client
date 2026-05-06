@@ -5,7 +5,7 @@ import PricingWrapper from "./PricingWrapper";
 export const metadata: Metadata = {
   title: "Pricing Plans | AI Form Builder",
   description:
-    "Choose the perfect plans for your needs. Get started for free or unlock advanced features with our premium plans.",
+    "Choose the perfect plan for your needs. Start for free or unlock powerful features with our premium options.",
 };
 
 export default function Page() {
