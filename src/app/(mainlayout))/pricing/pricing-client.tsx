@@ -357,7 +357,7 @@ export default function PricingPage() {
                 icon: Shield,
                 title: "Priority Support",
                 description:
-                  "Get help when you need it with our dedicated premium support team",
+                  "Get help when you need it with our dedicated premium support teams",
               },
             ].map((feature, index) => (
               <motion.div
