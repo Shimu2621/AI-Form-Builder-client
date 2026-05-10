@@ -258,7 +258,7 @@ export default function SignInPage() {
                   </div>
                   <div className="relative flex justify-center text-xs uppercase">
                     <span className="bg-white dark:bg-gray-900 px-2 text-gray-500 dark:text-gray-400">
-                      Or continue with
+                      Or continue with!
                     </span>
                   </div>
                 </div>
