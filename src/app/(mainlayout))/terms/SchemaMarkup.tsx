@@ -27,7 +27,7 @@ const SchemaMarkup = () => {
       {
         "@type": "WebPageElement",
         name: "Acceptable Use",
-        text: "You agree not to use the service for any unlawful purpose.",
+        text: "You agree not to use the service for any unlawful purposes.",
       },
       {
         "@type": "WebPageElement",
