@@ -274,7 +274,7 @@ export default function SignInPage() {
                   <Button
                     type="button"
                     variant="outline"
-                    className="w-full border-blue-300 dark:border-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-200 transform hover:scale-105 bg-transparent text-blue-600 dark:text-blue-600"
+                    className="w-full border-blue-300 dark:border-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-200 transform hover:scale-105 bg-transparent text-blue-600 dark:text-blue-400"
                     onClick={fillUserCredentials}
                   >
                     Quick User Login
