@@ -12,7 +12,7 @@ const SchemaMarkup = () => {
       {
         "@type": "WebPageElement",
         name: "Acceptance of Terms",
-        text: "By accessing and using our form building platform, you accept and agree to be bound by the terms and provision of this agreement.",
+        text: "By accessing and using our form building platform, you accept and agree to be bound by the terms and provisions of this agreement.",
       },
       {
         "@type": "WebPageElement",
