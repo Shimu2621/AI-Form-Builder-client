@@ -42,7 +42,7 @@ const SchemaMarkup = () => {
       {
         "@type": "WebPageElement",
         name: "Termination",
-        text: "We may terminate or suspend your account and bar access to the service immediately, without prior notice or liability.",
+        text: "We may terminate or suspend your accounts and bar access to the service immediately, without prior notice or liability.",
       },
       {
         "@type": "WebPageElement",
