@@ -69,7 +69,7 @@ export default function TermsPage() {
       id: "changes",
       title: "10. Changes to Terms",
       icon: Book,
-      content: `We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days’ notice prior to any new terms taking effect.`,
+      content: `We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days’ notice prior to any new terms taking effects.`,
     },
   ];
 
