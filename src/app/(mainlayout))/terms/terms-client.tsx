@@ -89,7 +89,7 @@ export default function TermsPage() {
     {
       title: "Transparent Pricing",
       description:
-        "No hidden fees or surprise charges in our pricing structure.",
+        "No hidden fees or surprise charges in our pricing structures.",
       icon: CheckCircle,
     },
   ];
