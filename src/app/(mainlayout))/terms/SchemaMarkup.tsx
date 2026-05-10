@@ -47,7 +47,7 @@ const SchemaMarkup = () => {
       {
         "@type": "WebPageElement",
         name: "Limitation of Liability",
-        text: "In no event shall our company, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages.",
+        text: "In no event shall our company, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damage.",
       },
       {
         "@type": "WebPageElement",
