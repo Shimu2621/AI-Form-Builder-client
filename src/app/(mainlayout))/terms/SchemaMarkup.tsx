@@ -6,7 +6,7 @@ const SchemaMarkup = () => {
     "@type": "WebPage",
     name: "Terms of Service",
     description:
-      "Our terms and conditions for using our AI Form Builder services.",
+      "Our terms and conditions for using our AI Form Builder service.",
     url: "https://aiformbuilder.com/terms",
     hasPart: [
       {
