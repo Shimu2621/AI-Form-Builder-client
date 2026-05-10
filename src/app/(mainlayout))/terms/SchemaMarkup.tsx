@@ -37,7 +37,7 @@ const SchemaMarkup = () => {
       {
         "@type": "WebPageElement",
         name: "Intellectual Property",
-        text: "The service and its original content, features, and functionality are and will remain the exclusive property of our company.",
+        text: "The service and its original contents, features, and functionality are and will remain the exclusive property of our company.",
       },
       {
         "@type": "WebPageElement",
