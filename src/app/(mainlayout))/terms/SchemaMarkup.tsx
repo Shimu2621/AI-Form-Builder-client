@@ -32,7 +32,7 @@ const SchemaMarkup = () => {
       {
         "@type": "WebPageElement",
         name: "Privacy Policy",
-        text: "Our Privacy Policy explains how we collect, use, and protect your information.",
+        text: "Our Privacy Policy explains how we collect, use, and protect your informations.",
       },
       {
         "@type": "WebPageElement",
