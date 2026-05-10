@@ -180,7 +180,7 @@ export default function StatusPage() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto mb-8"
           >
-            Check the current status of our services and APIs in real-time.
+            Check the current status of our service and API in real-time.
           </motion.p>
 
           <motion.div
