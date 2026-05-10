@@ -17,7 +17,7 @@ const SchemaMarkup = () => {
       {
         "@type": "WebPageElement",
         name: "Service Description",
-        text: "Our platform provides form building tools and services that allow users to create, customize, and deploy forms for data collection.",
+        text: "Our platform provides form building tools and services that allow users to create, customize, and deploy forms for data collections.",
       },
       {
         "@type": "WebPageElement",
