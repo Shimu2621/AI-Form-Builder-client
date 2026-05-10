@@ -94,7 +94,7 @@ export default function SignInPage() {
     onError: (error: any) => {
       toast.error(
         error?.response?.data?.message ||
-          "An error occurred during signin. Please try again."
+          "An error occurred during signin. Please try again.",
       );
     },
   });
@@ -244,7 +244,7 @@ export default function SignInPage() {
                   />
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium py-2 px-4 rounded-md transition-all duration-200 transform hover:scale-105"
+                    className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-900 text-white font-medium py-2 px-4 rounded-md transition-all duration-200 transform hover:scale-105"
                   >
                     Sign In
                   </Button>
