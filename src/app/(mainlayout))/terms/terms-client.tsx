@@ -173,7 +173,7 @@ export default function TermsPage() {
                 >
                   <Card className="h-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                     <CardContent className="p-8 text-center">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-100 to-pink-500 dark:from-purple-900/30 dark:to-pink-900/30 rounded-2xl mb-6">
+                      <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 rounded-2xl mb-6">
                         <IconComponent className="h-8 w-8 text-purple-600 dark:text-purple-400" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
