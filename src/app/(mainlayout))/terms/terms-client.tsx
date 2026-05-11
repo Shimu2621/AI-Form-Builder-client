@@ -201,7 +201,7 @@ export default function TermsPage() {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Full Terms and Condition
+              Full Terms and Conditions
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Complete legal terms governing your use of our platform.
