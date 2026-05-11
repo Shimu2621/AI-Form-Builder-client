@@ -57,7 +57,7 @@ const SchemaMarkup = () => {
       {
         "@type": "WebPageElement",
         name: "Changes to Terms",
-        text: "We reserve the right, at our sole discretion, to modify or replace these Terms at any time.",
+        text: "We reserve the right, at our sole discretion, to modify or replace these Term at any time.",
       },
     ],
   };
