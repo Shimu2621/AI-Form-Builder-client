@@ -52,7 +52,7 @@ const SchemaMarkup = () => {
       {
         "@type": "WebPageElement",
         name: "Governing Law",
-        text: "These Terms shall be interpreted and governed by the laws of the jurisdiction in which our company is incorporated.",
+        text: "These Term shall be interpreted and governed by the laws of the jurisdiction in which our company is incorporated.",
       },
       {
         "@type": "WebPageElement",
