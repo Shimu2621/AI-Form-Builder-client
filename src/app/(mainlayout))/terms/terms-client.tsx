@@ -83,7 +83,7 @@ export default function TermsPage() {
     {
       title: "Data Protection",
       description:
-        "Your data is protected with industry-standard security measures.",
+        "Your data is protected with industry-standard security measure.",
       icon: Shield,
     },
     {
