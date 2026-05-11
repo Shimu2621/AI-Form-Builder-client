@@ -117,7 +117,7 @@ export default function TermsPage() {
             className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6"
           >
             Terms of{" "}
-            <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-900 to-pink-600 bg-clip-text text-transparent">
               Service
             </span>
           </motion.h1>
