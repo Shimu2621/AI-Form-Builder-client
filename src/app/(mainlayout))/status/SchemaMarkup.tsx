@@ -25,7 +25,7 @@ const SchemaMarkup = () => {
           item: {
             "@type": "Service",
             name: "Database",
-            description: "Store all user and form data.",
+            description: "Store all users and form data.",
           },
         },
         {
