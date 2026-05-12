@@ -345,7 +345,7 @@ export default function PricingPage() {
                 icon: Palette,
                 title: "Custom Templates",
                 description:
-                  "Build and customize your own form templates with our advanced builder",
+                  "Build and customize your own form templates with our advanced builders",
               },
               {
                 icon: BarChart3,
