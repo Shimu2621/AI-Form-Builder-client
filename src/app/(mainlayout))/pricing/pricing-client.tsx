@@ -339,7 +339,7 @@ export default function PricingPage() {
             Why Choose Premium?
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               {
                 icon: Palette,
