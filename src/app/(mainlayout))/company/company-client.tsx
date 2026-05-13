@@ -202,7 +202,7 @@ export default function CompanyPage() {
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 Our journey is just beginning, and we&apos;re excited to
                 continue innovating and empowering creators everywhere to bring
-                their ideas to lifes.
+                their ideas to life.
               </p>
             </div>
           </motion.div>
