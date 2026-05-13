@@ -189,7 +189,7 @@ export default function CompanyPage() {
             <div className="prose prose-lg prose-emerald dark:prose-invert mx-auto">
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                 Founded with a vision to democratize form building, we started
-                as a small team of passionate developers who believed that
+                as a small team of passionate developer who believed that
                 creating powerful forms shouldn&apos;t require extensive
                 technical knowledge.
               </p>
