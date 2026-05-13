@@ -190,7 +190,7 @@ export default function CompanyPage() {
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                 Founded with a vision to democratize form building, we started
                 as a small team of passionate developer who believed that
-                creating powerful forms shouldn&apos;t require extensive
+                creating powerful form shouldn&apos;t require extensive
                 technical knowledge.
               </p>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
