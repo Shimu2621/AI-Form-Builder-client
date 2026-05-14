@@ -138,7 +138,7 @@ const Billing = () => {
             Subscriptions & Billing
           </h1>
           <p className="text-sm sm:text-base text-muted-foreground">
-            Manage your subscriptions and views your billing history
+            Manage your subscriptions and views your billing history!
           </p>
         </div>
         {/* <Button variant="outline" size="sm" onClick={handleRefresh} disabled={userLoading || subscriptionsLoading}>
