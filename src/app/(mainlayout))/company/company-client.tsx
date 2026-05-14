@@ -24,7 +24,7 @@ export default function CompanyPage() {
       icon: Users,
       title: "Community",
       description:
-        "Building a supportive ecosystem where creator can thrives and collaborate.",
+        "Building a supportive ecosystem where creator can thrive and collaborate.",
     },
     {
       icon: Award,
