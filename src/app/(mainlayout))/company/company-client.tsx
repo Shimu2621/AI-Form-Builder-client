@@ -18,7 +18,7 @@ export default function CompanyPage() {
       icon: Target,
       title: "Innovation",
       description:
-        "We constantly push the boundaries of what's possible in form building technologies.",
+        "We constantly push the boundaries of what's possible in form building technology.",
     },
     {
       icon: Users,
