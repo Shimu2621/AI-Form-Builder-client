@@ -173,7 +173,7 @@ const Billing = () => {
               Current Status
             </CardTitle>
             <CardDescription className="text-sm">
-              Your account information and current plan detail
+              Your account information and current plan details
             </CardDescription>
           </CardHeader>
           <CardContent>
