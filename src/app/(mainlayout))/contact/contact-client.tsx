@@ -249,7 +249,7 @@ export default function ContactPage() {
                       <div className="space-y-2">
                         <Label
                           htmlFor="user_email"
-                          className="text-gray-700 dark:text-gray-300"
+                          className="text-gray-400 dark:text-gray-300"
                         >
                           Email Address *
                         </Label>
