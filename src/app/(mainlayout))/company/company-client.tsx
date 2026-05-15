@@ -111,7 +111,7 @@ export default function CompanyPage() {
                 transition={{ delay: 0.8 + index * 0.1, duration: 0.6 }}
                 className="text-center"
               >
-                <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-4">
                   {stat.number}
                 </div>
                 <div className="text-gray-600 dark:text-gray-400 font-medium">
