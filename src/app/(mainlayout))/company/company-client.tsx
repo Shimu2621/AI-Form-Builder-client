@@ -138,7 +138,7 @@ export default function CompanyPage() {
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               The principle that guide everything we do and shape our company We
               reserve the rights, at our sole discretion, to modify, update, or
-              replace these Term at any time without prior notice.
+              replace these Terms at any time without prior notice.
             </p>
           </motion.div>
 
