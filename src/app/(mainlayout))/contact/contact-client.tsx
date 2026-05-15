@@ -50,7 +50,7 @@ export default function ContactPage() {
       }
     } catch (error) {
       console.log("Failed:", error);
-      toast.error("Failed to send message. Please try again!.");
+      toast.error("Failed to send message. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
