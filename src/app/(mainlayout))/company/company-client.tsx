@@ -92,7 +92,7 @@ export default function CompanyPage() {
             className="mt-10"
           >
             <Button className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
-              Learn More About Us
+              Learn More About Us!
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
           </motion.div>
