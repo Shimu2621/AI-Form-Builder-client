@@ -197,7 +197,7 @@ export default function CompanyPage() {
                 Today, we&apos;re proud to serve thousand of users worldwide,
                 from individual creators to enterprise teams, helping them
                 collect data, engage audiences, and build meaningful connections
-                through beautifully designed form.
+                through beautifully designed forms.
               </p>
               <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 Our journey is just beginning, and we&apos;re excited to
