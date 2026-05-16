@@ -717,7 +717,7 @@ function CompletePageContent() {
               <div className="text-center text-sm text-gray-500 dark:text-gray-400">
                 <p>
                   Thank you for your business! If you have any questions, please
-                  contact our support team.
+                  contact our support teams.
                 </p>
                 <p className="mt-1">
                   Generated on {formatDate(new Date().toISOString())}
