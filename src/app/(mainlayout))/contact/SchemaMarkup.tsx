@@ -6,7 +6,7 @@ const SchemaMarkup = () => {
     "@type": "ContactPage",
     name: "Contact Us",
     description:
-      "Get in touch with the AI Form Builder teams. We are here to help you with any questions you have.",
+      "Get in touch with the AI Form Builder team. We are here to help you with any questions you have.",
     url: "https://aiformbuilder.com/contact",
     mainEntity: {
       "@type": "Organization",
