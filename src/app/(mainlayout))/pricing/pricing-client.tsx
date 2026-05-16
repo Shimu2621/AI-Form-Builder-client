@@ -367,7 +367,7 @@ export default function PricingPage() {
                 transition={{ delay: 1.2 + index * 0.1, duration: 0.5 }}
                 className="p-6 rounded-xl bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50"
               >
-                <feature.icon className="h-8 w-8 text-purple-600 dark:text-purple-400 mx-auto mb-4" />
+                <feature.icon className="h-8 w-8 text-purple-600 dark:text-purple-800 mx-auto mb-4" />
                 <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">
                   {feature.title}
                 </h3>
