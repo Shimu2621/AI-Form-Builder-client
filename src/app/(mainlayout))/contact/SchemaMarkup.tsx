@@ -10,7 +10,7 @@ const SchemaMarkup = () => {
     url: "https://aiformbuilder.com/contact",
     mainEntity: {
       "@type": "Organization",
-      name: "AI Form Builder!",
+      name: "AI Form Builder",
       url: "https://aiformbuilder.com",
       logo: "https://aiformbuilder.com/logo.png",
       contactPoint: [
