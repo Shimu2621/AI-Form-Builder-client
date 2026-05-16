@@ -115,7 +115,7 @@ export default function ContactPage() {
             className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto"
           >
             We are here to help you with any question you have. Reach out to us,
-            and we&apos;ll respond as soon as possible.
+            and we&apos;ll respond as soon as possible
           </motion.p>
         </div>
       </section>
