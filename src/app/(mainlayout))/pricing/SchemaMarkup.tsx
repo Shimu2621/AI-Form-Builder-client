@@ -6,7 +6,7 @@ const SchemaMarkup = () => {
     "@type": "Product",
     name: "AI Form Builder",
     description:
-      "Create custom forms with AI in second. Choose from our free and premium plan to get started.",
+      "Create custom forms with AI in second. Choose from our free and premium plan to get started",
     offers: [
       {
         "@type": "Offer",
