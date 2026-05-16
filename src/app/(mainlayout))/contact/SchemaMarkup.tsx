@@ -4,7 +4,7 @@ const SchemaMarkup = () => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: "Contact Us.",
+    name: "Contact Us",
     description:
       "Get in touch with the AI Form Builder team. We are here to help you with any questions you have.",
     url: "https://aiformbuilder.com/contact",
