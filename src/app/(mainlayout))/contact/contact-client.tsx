@@ -150,7 +150,7 @@ export default function ContactPage() {
                           colorClasses[info.color as keyof typeof colorClasses]
                         } rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}
                       >
-                        <IconComponent className="h-8 w-8 text-gray-600 dark:text-gray-600" />
+                        <IconComponent className="h-8 w-8 text-gray-600 dark:text-gray-300" />
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
                         {info.title}
