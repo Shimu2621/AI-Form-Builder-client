@@ -177,7 +177,7 @@ export function FAQSection() {
         transition={{
           duration: 5,
           repeat: Number.POSITIVE_INFINITY,
-
+          ease: "easeInOut",
           delay: 1,
         }}
       />
