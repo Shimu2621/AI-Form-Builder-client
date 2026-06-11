@@ -89,7 +89,7 @@ const ResponseTable = ({ id }: { id: string }) => {
 
       {responses && responses.length > 0 ? (
         <div className="overflow-x-auto px-4">
-          <Table className="w-full table-fixed">
+          <Table className="w-full ">
             <TableHeader>
               <TableRow>
                 <TableHead className="w-1/3 text-left">Response ID</TableHead>
