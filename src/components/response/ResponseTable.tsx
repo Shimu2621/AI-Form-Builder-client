@@ -94,7 +94,7 @@ const ResponseTable = ({ id }: { id: string }) => {
               <TableRow>
                 <TableHead className="w-1/3 text-left">Response ID</TableHead>
                 <TableHead className="w-1/3 text-left">Submitted At</TableHead>
-                <TableHead className="w-1/3 ">Actions</TableHead>
+                <TableHead className="w-1/3 text-left">Actions</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
