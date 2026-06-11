@@ -190,7 +190,7 @@ export function FAQSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-pink-600 dark:from-purple-400 dark:to-pink-400 bg-clip-text text-transparent">
-            FAQs Form
+            FAQs
           </h2>
           <p className="text-xl text-muted-foreground">
             Everything you need to know about our AI Form Generator
