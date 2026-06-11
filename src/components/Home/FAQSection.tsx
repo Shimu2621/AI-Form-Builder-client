@@ -129,6 +129,7 @@ function AnimatedBubbles() {
           initial="initial"
           animate="animate"
           transition={{
+            ...bubbleVariants.animate.transition,
             delay: bubble.delay,
             ease: "easeInOut",
           }}
